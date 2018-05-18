@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+
+  <script type="text/javascript">
+    // smooth scroll
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 2000, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+      $('.customer-logos').slick({
+      				slidesToShow: 4,
+      				slidesToScroll: 1,
+      				autoplay: true,
+      				autoplaySpeed: 1000,
+      				arrows: false,
+      				dots: false,
+      					pauseOnHover: false,
+      					responsive: [{
+      					breakpoint: 768,
+      					settings: {
+      						slidesToShow: 3
+      					}
+      				}, {
+      					breakpoint: 520,
+      					settings: {
+      						slidesToShow: 2
+      					}
+      				}]
+      			});
+      		});
+
+  </script>
+</head>
+
+<body>
+  <nav class="topnav">
+    <a href="#aboutme">About</a>
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+
+
+
+  </nav>
+  <div id="home">
+
+    <div class="home-p">
+      <h1 class="heading4">Welcome</h1>
+      <p class="font5">Hi i'm Mathew Kingwill, I am A junior Web Developer.</p>
+    </div>
+    <div id="button">
+      <a href="#aboutme"><button  class="button1">More About Me</button></a>
+      <a href="https://github.com/MathewKingwill"><button  class="button2">My Projects</button></a>
+    </div>
+  </div>
+
+    <div id="aboutme">
+      <h1 class="heading1">About Me</h1>
+
+      <div class="" id="roundimg">
+        <img class="zoom round" src="images/mathew.jpg">
+
+      </div>
+      <p class="font1">I consider myself to be an enthusiastic, self-motivated, kind-hearted and hard working individual.I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well. I am a very
+        determined young man and when I put my mind to something always put 100% of my efforts into it.I have a variety of intrests which include my new passion for coding and my love for soccer.</p>
+    </div>
+
+  </div>
+
+
+  <div id="secondimg">
+
+  </div>
+  <div id="skills">
+    <h1 class="heading2">My Skills</h1>
+    <div class="customer-logos">
+      <div class="slide"><img src="images/git.png"></div>
+      <div class="slide"><img src="images/html5.png"></div>
+      <div class="slide"><img src="images/sass.png"></div>
+      <div class="slide"><img src="images/js.png"></div>
+      <div class="slide"><img src="images/j-Q.png"></div>
+      <div class="slide"><img src="images/git.png"></div>
+      <div class="slide"><img src="images/html5.png"></div>
+      <div class="slide"><img src="images/sass.png"></div>
+      <div class="slide"><img src="images/js.png"></div>
+      <div class="slide"><img src="images/j-Q.png"></div>
+
+    </div>
+
+
+  </div>
+  <div id="thirdimg">
+
+  </div>
+
+  <div id="education">
+    <h1 class="heading2">Education</h1>
+    <div class="Education_div1">
+      <h2 class="heading2" style="text-decoration: underline;">High School</h2>
+      <p class="font2">Woodridge College</p>
+      <p class="font2">2013-2017</p>
+      <p class="font2">Bachelors Degree</p>
+
+    </div>
+    <div class="Education_div2">
+      <h2 class="heading2" style="text-decoration: underline;">Course</h2>
+      <p class="font2">CodeSpace </p>
+      <p class="font2">2018</p>
+      <p class="font2">Web Development (3 month full-time course)</p>
+
+
+    </div>
+  </div>
+  <div id="contact">
+    <h1 class="heading3">Contact Infomation</h1>
+    <p class="font3">0765004232 <img src="images/phone.png" alt="" style= " width: 45px;
+    height: 40px;" </p>
+      <p class="font3"> matkingwill@gmail.com <img src="images/email.png" alt="" style= " width: 45px;
+    height: 40px;" </p>
+
+  </div>
+
+</body>
+
+</html>
