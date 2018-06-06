@@ -3,22 +3,27 @@ div {
 
 body {
   background-color: black;
-  font-family: Arial; }
+  font-family: Arial;
+  margin: 0;
+  padding: 0; }
 
 .topnav {
   background-color: black;
   overflow: hidden;
-  text-align: center;
+  text-align: right;
   width: 100%;
-  height: 50px;
+  height: 30px;
   position: fixed;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
   .topnav a {
     text-decoration: none;
-    padding: 6vw;
     color: white;
-    font-size: 35px; }
+    font-size: 20px;
+    padding: 5vw; }
 
 #home {
   background-image: url("images/mat.jpg");
@@ -73,7 +78,8 @@ body {
   padding: 10px;
   text-decoration: none;
   margin-top: 10%;
-  padding-right: 43px; }
+  padding-right: 43px;
+  text-align: center; }
 
 .heading1 {
   text-align: center;
@@ -95,7 +101,8 @@ body {
   height: 500px;
   background-color: black;
   color: white;
-  padding: 100px 10%; }
+  padding: 100px 10%;
+  font-family: 'Roboto', sans-serif; }
 
 .round {
   border-radius: 50%;
@@ -121,7 +128,7 @@ body {
   margin: 0; }
 
 #skills {
-  height: 400px;
+  height: 300px;
   background-color: black;
   color: white;
   padding-left: 10%;
@@ -240,7 +247,7 @@ body {
   margin: 0; }
 
 #education {
-  height: 500px;
+  height: 400px;
   background-color: black;
   color: white;
   padding-left: 10%;
@@ -255,23 +262,31 @@ body {
   float: right; }
 
 #contact {
-  height: 300px;
+  height: 200px;
   background-color: white;
   color: Black;
   padding-left: 10%;
   line-height: 30px;
-  padding-top: 100px;
-  padding-right: 10%; }
+  padding-top: 50px;
+  padding-right: 10%;
+  width: 50%; }
+  #contact .heading3 {
+    text-align: left;
+    font-size: 30px;
+    width: 50%; }
+  #contact .font3 {
+    text-align: left;
+    font-size: 20px;
+    width: 50%; }
 
-.heading3 {
-  text-align: left;
-  font-size: 30px; }
-
-.font3 {
-  text-align: left;
-  font-size: 20px; }
+#Contact1 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  color: Black; }
 
 #gif {
-  float: right; }
+  float: right;
+  padding-right: 5%; }
 
 /*# sourceMappingURL=styles.css.map */
